@@ -18,6 +18,7 @@ p {
   color: #26a69a;
 }
 .title-div{
+  cursor:default;
   font-family: 'Merriweather', serif;
   font-size: 120px;
   position: absolute;
@@ -25,6 +26,25 @@ p {
   left: 50%;
   transform: translate(-50%, -40%);
   color: #F89406;
+  text-decoration: underline;
+}
+.main-text{
+  position: relative;
+  cursor:default;
+  color:black;
+    -webkit-transition: font-size 1s; /* Safari */
+    transition: font-size 1s;
+}
+.hover-specific{
+  margin:0;
+  color:#F39C12;
+  font-size: 15px;
+    -webkit-transition: font-size 1s, margin 1s; /* Safari */
+    transition: font-size 1s, margin 1s;
+}
+.hover-specific:hover{
+  z-index: 10;
+  font-size: 35px;
 }
 .parallax-container {
   min-height: 380px;
