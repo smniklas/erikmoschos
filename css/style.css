@@ -1,85 +1,275 @@
-/* Custom Stylesheet */
-/**
- * Use this file to override Materialize files so you can update
- * the core Materialize files in the future
- *
- * Made By MaterializeCSS.com
- */
-
-nav ul a,
-nav .brand-logo {
-  color: #444;
+.html{
+  background-color: black;
+  overflow:hidden;
 }
-
-p {
-  line-height: 2rem;
-}
-.button-collapse {
-  color: #26a69a;
-}
-.title-div{
-  cursor:default;
-  font-family: 'Merriweather', serif;
-  font-size: 120px;
+.left-one{
   position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -40%);
-  color: #F89406;
+  background-color:#D32F2F;
+  height:50%;
+  width:15%;
+  left:0;
+}
+.left-one:hover{
+  cursor:pointer;
+  background-color: #EC644B;
+}
+
+.left-two{
+  position: absolute;
+  background-color:#F44336 ;
+    height:50%;
+  width:15%;
+  bottom:0;
+  left:0;
+}
+.left-two:hover{
+  cursor:pointer;
+  background-color: #EC644B;
+}
+
+.mid-one{
+  background: #ECECEC;
+  position: absolute;
+  height:100%;
+  width:34%;
+  left:15%;
+  -webkit-perspective: 800px;
+  -moz-perspective: 800px;
+  -o-perspective: 800px;
+  perspective: 800px;
+}
+.card {
+  margin:0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-transition: -webkit-transform 1s;
+  -moz-transition: -moz-transform 1s;
+  -o-transition: -o-transform 1s;
+  transition: transform 1s;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform-origin: 50% 50%;
+}
+.card div {
+    display: block;
+    height: 100%;
+    width: 100%;
+    color: #212121;
+    text-align: center;
+    font-size: 16px;
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.card .front {
+  background-color:#2C3E50;
+}
+.card .back {
+    background: #ECECEC;
+    -webkit-transform: rotateY( 180deg );
+    -moz-transform: rotateY( 180deg );
+    -o-transform: rotateY( 180deg );
+    transform: rotateY( 180deg );
+}
+.card.flipped {
+    -webkit-transform: rotateY( 180deg );
+    -moz-transform: rotateY( 180deg );
+    -o-transform: rotateY( 180deg );
+    transform: rotateY( 180deg );
+}
+
+
+.right-one{
+  background: #ECECEC;
+  position: absolute;
+  height:50%;
+  width:26%;
+  top:0;
+  left:49%;
+  -webkit-perspective:2000px;
+  -moz-perspective:2000px;
+  -o-perspective:2000px;
+  perspective:2000px;
+}
+.cardtwo{
+  margin:0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-transition: -webkit-transform 1s;
+  -moz-transition: -moz-transform 1s;
+  -o-transition: -o-transform 1s;
+  transition: transform 1s;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform-origin: 50% 50%;  
+}
+.cardtwo div{
+    display: block;
+    height: 100%;
+    width: 100%;
+    color: #212121;
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;  
+}
+.cardtwo .fronttwo{
+  background-color:#6C7A89;
+}
+.cardtwo .backtwo{
+     background: #ECECEC;
+    -webkit-transform: rotateY( 180deg );
+    -moz-transform: rotateY( 180deg );
+    -o-transform: rotateY( 180deg );
+    transform: rotateY( 180deg ); 
+}
+.cardtwo.flipped{
+    -webkit-transform: rotateY( 180deg );
+    -moz-transform: rotateY( 180deg );
+    -o-transform: rotateY( 180deg );
+    transform: rotateY( 180deg );  
+}
+
+
+.right-two{
+  background: #ECECEC;
+  position: absolute;
+  height:50%;
+  width: 36%;
+  left:49%;
+  bottom:0;
+  -webkit-perspective:2000px;
+  -moz-perspective:2000px;
+  -o-perspective:2000px;
+  perspective:2000px;
+}
+.cardthree{
+  margin:0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-transition: -webkit-transform 1s;
+  -moz-transition: -moz-transform 1s;
+  -o-transition: -o-transform 1s;
+  transition: transform 1s;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform-origin: 50% 50%;    
+}
+.cardthree div{
+    display: block;
+    height: 100%;
+    width: 100%;
+    color: #212121;
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;  
+}
+.cardthree .frontthree{
+    background-color:#336E7B;
+}
+.cardthree .backthree{
+    background: #ECECEC;
+    -webkit-transform: rotateY( 180deg );
+    -moz-transform: rotateY( 180deg );
+    -o-transform: rotateY( 180deg );
+    transform: rotateY( 180deg );   
+}
+.cardthree.flipped{
+    -webkit-transform: rotateY( 180deg );
+    -moz-transform: rotateY( 180deg );
+    -o-transform: rotateY( 180deg );
+    transform: rotateY( 180deg );    
+}
+
+.inputPos{
+  top:5%;
+}
+.inputPostwo{
+  top:25%;
+}
+.inputPosthree{
+  top:45%;
+}
+.inputPosfour{
+  top:65%;
+}
+.widthfix{
+  height:20px!important;
+}
+.right-three{
+  position: absolute;
+  background-color:#22313F;
+  width:25%;
+  height:50%;
+  top:0;
+  left:75%;
+}
+.right-four{
+  position: absolute;
+  background-color:#67809F;
+  height:50%;
+  width:15%;
+  left:85%;
+  bottom:0;
+}
+.right-four:hover{
+  cursor:pointer;
+  background-color: #EC644B;
+}
+
+
+.title-text{
+  position: absolute;
+  color:orange;
+  font-family: 'Merriweather', serif;
+  font-size: 100px;
+  top:15%;
+  left:5%;
   text-decoration: underline;
 }
-.main-text{
-  position: relative;
-  cursor:default;
-  color:black;
-    -webkit-transition: font-size 1s; /* Safari */
-    transition: font-size 1s;
+.title-sub-text{
+  font-family: 'Merriweather', serif;
+}
+.margin-fix{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.posfix{
+  top:30%;
+  left:5%;
+}
+.posfixone{
+  left:5%;
+}
+.btnpos{
+  position: absolute;
+  top:85%;
+  left:3%;
+}
+.marginno{
+  margin-bottom: 0;
+}
+.icon{
+  position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+  margin:auto;
 }
 .hover-specific{
-  margin:0;
-  color:#F39C12;
-  font-size: 15px;
-    -webkit-transition: font-size 1s, margin 1s; /* Safari */
-    transition: font-size 1s, margin 1s;
-}
-.hover-specific:hover{
-  z-index: 10;
-  font-size: 35px;
-}
-.parallax-container {
-  min-height: 380px;
-  line-height: 0;
-  height:1000px;
-  color: rgba(255,255,255,.9);
-}
-  .parallax-container .section {
-    width: 100%;
-  }
-@media only screen and (max-width : 992px) {
-  .parallax-container .section {
-    position: absolute;
-    top: 40%;
-  }
-  #index-banner .section {
-    top: 10%;
-  }
-  .title-div{
-    font-size: 80px;
-      top: 0%;
-  left: 50%;
-  transform: translate(-50%, -0%);
-
-  }
-}
-
-@media only screen and (max-width : 600px) {
-  #index-banner .section {
-    top: 0;
-  }
-}
-.quote{
-  font-size:100px!important;
-}
-footer.page-footer {
-  margin: 0;
+  color:orange;
 }

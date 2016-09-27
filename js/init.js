@@ -1,12 +1,13 @@
 (function($){
   $(function(){
-
-    $('.button-collapse').sideNav();
-    $('.parallax').parallax();
-    $('.show-btn').click(function(){
-      $('.main-text').css("font-size","0px");
-      $('.hover-specific').css("margin","4px").css("text-transform", "uppercase");
-    });
-
+  $('.left-one').click(function(){
+    $('.card').toggleClass('flipped');
+  });
+  $('.left-two').click(function(){
+    $('.cardtwo').toggleClass('flipped');
+  });
+    $('.right-four').click(function(){
+    $('.cardthree').toggleClass('flipped');
+  });
   }); // end of document ready
 })(jQuery); // end of jQuery name space
