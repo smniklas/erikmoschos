@@ -2,6 +2,7 @@
   background-color: black;
   overflow:hidden;
 }
+
 .left-one{
   position: absolute;
   background-color:#D32F2F;
@@ -208,8 +209,11 @@
   top:65%;
 }
 .widthfix{
-  height:20px!important;
+  font-size:18px!important;
+  transition: font-size 0.5s;
+  height:5px!important;
 }
+
 .right-three{
   position: absolute;
   background-color:#22313F;
@@ -236,7 +240,8 @@
   position: absolute;
   color:orange;
   font-family: 'Merriweather', serif;
-  font-size: 100px;
+  font-size: 90px;
+  transition: font-size 0.5s;
   top:15%;
   left:5%;
   text-decoration: underline;
@@ -244,12 +249,16 @@
 .title-sub-text{
   font-family: 'Merriweather', serif;
 }
+.mobi-fix{
+  font-size:15px;
+  transition: font-size 0.5s;
+}
 .margin-fix{
-  margin-left: 10px;
+  margin-left: 5px;
   margin-right: 10px;
 }
 .posfix{
-  top:30%;
+  top:35%;
   left:5%;
 }
 .posfixone{
@@ -272,4 +281,63 @@
 }
 .hover-specific{
   color:orange;
+}
+
+@media only screen and (max-width : 1800px) {
+  .title-text{
+    font-size:80px;
+  }
+
+}
+@media only screen and (max-width : 1600px) {
+  .title-text{
+    font-size:70px;
+  }
+
+}
+@media only screen and (max-width : 1400px) {
+  .title-text{
+    font-size:60px;
+  }
+  .mobi-fix{
+    font-size:13px;
+  }
+}
+@media only screen and (max-width : 1200px) {
+  .title-text{
+    font-size:50px;
+  }
+  .mobi-fix{
+    font-size:13px;
+  }
+  .widthfix{
+    font-size:14px!important;
+  }
+}
+@media only screen and (max-width : 1000px) {
+  .title-text{
+    font-size:40px;
+  }
+  .mobi-fix{
+    font-size:12px;
+  }
+}
+@media only screen and (max-width : 900px) {
+  .title-text{
+    font-size:30px;
+  }
+  .mobi-fix{
+    font-size:10px;
+  }
+  .widthfix{
+    font-size:12px!important;
+  }
+}
+@media only screen and (max-width : 700px) {
+  .title-text{
+    font-size:20px;
+  }
+  .widthfix{
+    font-size:10px!important;
+  }
 }
